@@ -55,6 +55,6 @@ router.put(
   ],
   updatePatient
 );
-router.delete("/:id",deletePatient);
+router.delete("/:id", deletePatient);
 
 module.exports = router;

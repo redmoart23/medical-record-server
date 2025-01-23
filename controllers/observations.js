@@ -1,7 +1,7 @@
 const { response } = require("express");
+const mongoose = require("mongoose");
 const Observation = require("../models/Observations");
 const Patient = require("../models/Patients");
-const mongoose = require("mongoose");
 
 const getObservationsByPatient = async (req, res = response) => {
   const patientId = req.params.id;
