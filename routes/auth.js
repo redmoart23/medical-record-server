@@ -37,6 +37,6 @@ router.post(
   ],
   registerDoctor
 );
-router.get("/refresh-token", [fieldsValidator], renewToken);
+router.get("/refresh-token", fieldsValidator, renewToken);
 
 module.exports = router;
